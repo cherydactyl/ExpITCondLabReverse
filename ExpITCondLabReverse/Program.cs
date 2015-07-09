@@ -41,11 +41,12 @@ namespace ExpITCondLabReverse
                 Console.Write("Input: ");  //prepare to show input as received
                 foreach (string word in args)
                 {
-                    allTheStringsCombined = allTheStringsCombined + word;
+                    //concatenate each word in turn onto the end of the combined string
+                    allTheStringsCombined = allTheStringsCombined + word;   
                     //Console.WriteLine(allTheStringsCombined);         //for debugging
                     Console.Write(word + " ");  //show the input strings one by one
                 }
-                Console.WriteLine();    //write a new line after the input string
+                Console.WriteLine();    //write a new line after the input strings have been printed
                 Console.WriteLine();    //extra whitespace for readability
                 //and now reverse it, just like above
                 string reverseAll = new string(allTheStringsCombined.ToCharArray().Reverse().ToArray());
